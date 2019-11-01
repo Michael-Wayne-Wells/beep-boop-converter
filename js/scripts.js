@@ -60,17 +60,17 @@ $(document).ready(function() {
     $("#new-results").text(resultOutput.join(' '));
     $("#result").show();
     $("#flipped").show();
+    $("#reverse-results").click(function(event) {
+      var flippedOutput = flipIt(resultOutput);
+      console.log(flippedOutput);
+      $("#new-results").text(flippedOutput);
+
+    });
 
 
   });
 
-  $("#reverse-results").click(function(event) {
-    event.preventDefault();
-    var flippedOutput = flipIt(resultOutput);
-    console.log(flippedOutput);
-    $('#flipped-results').text(flippedOutput)
 
-  })
 });
 
 
