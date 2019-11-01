@@ -1,6 +1,12 @@
+
+function countUp(userNum){
 var numArray=[];
-userNum = 55;
 for(i = 0; i <= userNum; i+=1){
-  numArray.push(i)
+  numArray.push(i);
 }
-console.log(numArray)
+return numArray;
+}
+
+userNum=4
+
+console.log(countUp(userNum));
