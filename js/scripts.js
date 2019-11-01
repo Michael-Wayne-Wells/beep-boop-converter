@@ -10,6 +10,8 @@ for(var j = 0; j<numUser.length; j++) {
     numUser[j]=numUser[j];
   }
 }
+
+
 for(var j = 0; j<numUser.length; j++) {
   if(numUser[j] == testArray[1]) {
     results = 1
