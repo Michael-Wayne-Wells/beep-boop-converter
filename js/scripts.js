@@ -1,15 +1,16 @@
-numUser = ["3", "4", "5", "3", "5332", "643", "231", "5332"]
-
-
-for(i = 0; i<numUser.length; i++) {
-if(numUser[i] == 3) {
-numUser[i] = "I'm sorry Dave. I'm afraid I can't do that."
-} else if (numUser[i] == 2) {
-numUser[i] = "Boop!"
-}else if (numUser[i] == 1) {
-numUser[i] = "Beep!"
+numUser = ["3", "4", "5", "3", "5", "2", "1", "4"]
+testArray = ['3', '2', '1']
+results = ''
+for(j = 0; j<numUser.length; j++) {
+if(numUser[j] == testArray[0]) {
+results = "I'm sorry Dave. I'm afraid I can't do that."
+break;
+} else if (numUser[j] == testArray[1]) {
+results = "Boop!";
+}else if (numUser[j] == testArray[2]) {
+results = "Beep!"
 } else {
-numUser[i]=numUser[i];
+numUser[j]=numUser[j];
 
 }
 console.log(numUser)
