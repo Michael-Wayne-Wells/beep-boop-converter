@@ -8,7 +8,6 @@ function numberReplacer(userNum) {
     return numArray;
   }
   var countUpResults = (countUp(userNum).join().split(","));
-
   function replaceNums(countUpResults){
     var replaceArray = [];
     var testArray = ["3", "2", "1"];
@@ -26,7 +25,6 @@ function numberReplacer(userNum) {
           numberTest3=true;
         } else {
           result[j]=result[j];
-
         };
       };
       if(numberTest1 === true){
@@ -45,13 +43,11 @@ function numberReplacer(userNum) {
   var replaceResults = replaceNums(countUpResults);
   return replaceResults;
 };
-
 function flipIt(resultOutput) {
   var newString = resultOutput.reverse();
   return newString;
 };
 //frontEnd
-
 $(document).ready(function() {
   $("#userInputForm").submit(function(event) {
     event.preventDefault();
@@ -62,17 +58,7 @@ $(document).ready(function() {
     $("#flipped").show();
     $("#reverse-results").click(function(event) {
       var flippedOutput = flipIt(resultOutput);
-      console.log(flippedOutput);
-      $("#new-results").text(flippedOutput);
-
+      $("#new-results").text(flippedOutput.join(' '));
     });
-
-
   });
-
-
 });
-
-
-//test
-// userNum="332"
