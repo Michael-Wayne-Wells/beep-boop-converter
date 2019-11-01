@@ -7,24 +7,27 @@ function countUp(userNum){
   }
   return numArray;
 }
+var resultsString = countUp(userNum).join('')
+var countUpResults = resultsString.split();
 
-var countUpResults = countUp(userNum);
 
-console.log(countUpResults);
 // var countUpResults = ["1", "4", "3"];
 function replaceNums(countUpResults){
+
+  var replaceArray = [];
   var testArray = ['3', '2', '1'];
   var resultsArray =["I'm sorry Dave. I'm afraid I can't do that.", "Boop!", "Beep!"];
   countUpResults.forEach(function(result){
-    result.split('');
+    // result.split('');
     for(i=0;i<result.length;i++){
       if(result[i] === testArray[0]){
-      result = resultsArray[0];
+      replaceArray.push(resultsArray[0]);
     } else {
-      return result[i];
+      replaceArray.push(result[i]);
     };
   };
 });
+return replaceArray;
 }
 
 var replaceResults = replaceNums(countUpResults);
