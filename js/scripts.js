@@ -45,17 +45,32 @@ function numberReplacer(userNum) {
   var replaceResults = replaceNums(countUpResults);
   return replaceResults;
 };
+
+function flipIt(resultOutput) {
+  var newString = resultOutput.reverse();
+  return newString;
+};
 //frontEnd
 
 $(document).ready(function() {
   $("#userInputForm").submit(function(event) {
     event.preventDefault();
-    $("#result").hide();
     var userNum = $("#user-number").val();
     var resultOutput = numberReplacer(userNum);
-    $("#new-results").text(resultOutput);
-    $("#result").fadeIn();
+    $("#new-results").text(resultOutput.join(' '));
+    $("#result").show();
+    $("#flipped").show();
+
+
   });
+
+  $("#reverse-results").click(function(event) {
+    event.preventDefault();
+    var flippedOutput = flipIt(resultOutput);
+    console.log(flippedOutput);
+    $('#flipped-results').text(flippedOutput)
+
+  })
 });
 
 

@@ -1,0 +1,8 @@
+button {
+  color: white;
+}
+
+#result, #flipped {
+  display: none;
+  color: white;
+}
