@@ -11,7 +11,7 @@ function numberReplacer(userNum) {
   function replaceNums(countUpResults){
     var replaceArray = [];
     var testArray = ["3", "2", "1"];
-    var resultsArray =["I'm sorry Dave. I'm afraid I can't do that.", "Boop!", "Beep!"];
+    var resultsArray =["I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Beep!"];
     countUpResults.forEach(function(result){
       var numberTest1 = false;
       var numberTest2 = false;
