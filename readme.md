@@ -1,4 +1,4 @@
- # _Beep Boop Converter_
+# _Beep Boop Converter_
 
 #### _A program that will convert specific numbers and outputs results based on user's input. 11/01/19_
 
@@ -21,9 +21,9 @@ _This program takes a number input from a user and returns numbers counting up u
 * _Launch <https://michael-wayne-wells.github.io/beep-boop-converter/> in your browser._
 ### OR ###
 * clone and open the file locally
-  * _in terminal run:_
-  >$git clone https://github.com/Michael-Wayne-Wells/beep-boop-converter.git
-  * _open index.html in your browser._
+* _in terminal run:_
+>$git clone https://github.com/Michael-Wayne-Wells/beep-boop-converter.git
+* _open index.html in your browser._
 
 
 

@@ -47,6 +47,7 @@ function flipIt(resultOutput) {
   var newString = resultOutput.reverse();
   return newString;
 };
+
 //frontEnd
 $(document).ready(function() {
   $("#userInputForm").submit(function(event) {
